@@ -13,7 +13,7 @@ class UserFactory {
     const READ   = "READ";
     const UPDATE = "UPDATE";
     const DELETE = "DELETE";
-    const LOGIN = "LOGIN";
+    const LOGIN  = "LOGIN";
 
 
     private $type ;     
