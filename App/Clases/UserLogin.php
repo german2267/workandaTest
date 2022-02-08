@@ -8,8 +8,10 @@ class UserLogin implements UserInterface {
     public function execute($data) {
         $Db = new Database();
         
+        $userName = $Db->connect()->real_escape_string($data->nombreUsuario);
+
         $Sql = "SELECT * FROM usuarios 
-                where nombreUsuario = '".$data->nombreUsuario."' AND 
+                where nombreUsuario = '".$userName."' AND 
                 password = '".md5($data->password)."'";
         
         $result = $Db->connect()->query($Sql);
