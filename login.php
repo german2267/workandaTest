@@ -23,6 +23,7 @@ if(isset($_SESSION['usuarioWorkanda'])){
 <div class="login-page">
   <div class="form">
     <h1>Test Tecnico!!!</h1>
+    <h2>Hola 7mo los veo en dic</h2>
     <form class="login-form">
       <input type="text" placeholder="username" id="usuario" value="user"/>
       <input type="password" placeholder="password" id = "pass" value="1234"/>
